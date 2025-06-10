@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ecommerce-platform",
+    "title": "E-Commerce Platform",
+    "blurb": "Built a full-stack e-commerce platform using React, Node.js, and MongoDB with real-time inventory management and payment processing.",
+    "descriptionMD": "## E-Commerce Platform\n\nA comprehensive e-commerce solution built from the ground up with modern web technologies. Features include:\n\n- **Frontend**: React with TypeScript, Redux Toolkit for state management\n- **Backend**: Node.js with Express, RESTful API design\n- **Database**: MongoDB with Mongoose ODM\n- **Payment**: Stripe integration for secure transactions\n- **Authentication**: JWT-based auth with refresh tokens\n- **Real-time**: WebSocket integration for live inventory updates\n\n### Key Features\n- User authentication and authorization\n- Product catalog with search and filtering\n- Shopping cart and wishlist functionality\n- Order management and tracking\n- Admin dashboard for inventory management\n- Responsive design for all devices\n\n### Technical Highlights\n- Implemented caching strategies for improved performance\n- Built comprehensive test suite with Jest and Cypress\n- Deployed with CI/CD pipeline using GitHub Actions\n- Containerized with Docker for consistent environments",
+    "tech": ["React", "TypeScript", "Node.js", "MongoDB", "Stripe", "Docker"],
+    "image": "/images/ecommerce-project.jpg",
+    "liveUrl": "https://ecommerce-demo.com",
+    "githubUrl": "https://github.com/carlpaolino/ecommerce-platform"
+  },
+  {
+    "id": "ai-chat-assistant",
+    "title": "AI Chat Assistant",
+    "blurb": "Developed an intelligent chat assistant using OpenAI's GPT API, featuring context-aware conversations and custom training data integration.",
+    "descriptionMD": "## AI Chat Assistant\n\nAn intelligent conversational AI assistant built with modern web technologies and OpenAI's API. The application features context-aware conversations and specialized knowledge integration.\n\n### Architecture\n- **Frontend**: Next.js with React and Tailwind CSS\n- **Backend**: Python FastAPI with async processing\n- **AI Integration**: OpenAI GPT-4 API with custom fine-tuning\n- **Database**: PostgreSQL for conversation history\n- **Vector Search**: Pinecone for semantic document retrieval\n\n### Key Features\n- Real-time chat interface with typing indicators\n- Context-aware responses maintaining conversation history\n- Document upload and knowledge base integration\n- User authentication and conversation management\n- Rate limiting and usage analytics\n- Multi-language support\n\n### Technical Achievements\n- Implemented RAG (Retrieval-Augmented Generation) architecture\n- Built custom embeddings pipeline for knowledge base\n- Optimized API calls to reduce costs by 40%\n- Achieved 95% user satisfaction in beta testing",
+    "tech": ["Next.js", "Python", "FastAPI", "OpenAI", "PostgreSQL", "Pinecone"],
+    "image": "/images/ai-chat-project.jpg",
+    "liveUrl": "https://ai-assistant-demo.com",
+    "githubUrl": "https://github.com/carlpaolino/ai-chat-assistant"
+  },
+  {
+    "id": "task-management-app",
+    "title": "Task Management Application",
+    "blurb": "Created a collaborative task management tool with real-time updates, team workspaces, and advanced project tracking capabilities.",
+    "descriptionMD": "## Task Management Application\n\nA comprehensive project management solution designed for teams and individuals. Built with scalability and user experience as top priorities.\n\n### Technical Stack\n- **Frontend**: Vue.js 3 with Composition API and Pinia\n- **Backend**: NestJS with TypeORM\n- **Database**: PostgreSQL with Redis for caching\n- **Real-time**: Socket.io for live collaboration\n- **File Storage**: AWS S3 for attachments\n- **Deployment**: AWS ECS with Application Load Balancer\n\n### Core Features\n- **Project Management**: Create and organize projects with custom workflows\n- **Team Collaboration**: Real-time updates and notifications\n- **Task Tracking**: Kanban boards, Gantt charts, and calendar views\n- **Time Tracking**: Built-in timer with reporting and analytics\n- **File Management**: Drag-and-drop file uploads with preview\n- **Reporting**: Custom dashboards with exportable reports\n\n### Performance Optimizations\n- Implemented virtual scrolling for large task lists\n- Used Redis for session management and caching\n- Optimized database queries with proper indexing\n- Achieved 99.9% uptime with health monitoring",
+    "tech": ["Vue.js", "NestJS", "PostgreSQL", "Redis", "Socket.io", "AWS"],
+    "image": "/images/task-management-project.jpg",
+    "liveUrl": "https://taskmanager-demo.com",
+    "githubUrl": "https://github.com/carlpaolino/task-management-app"
+  },
+  {
+    "id": "machine-learning-pipeline",
+    "title": "ML Data Processing Pipeline",
+    "blurb": "Built a scalable machine learning pipeline for processing large datasets with automated model training and deployment capabilities.",
+    "descriptionMD": "## Machine Learning Data Processing Pipeline\n\nA robust, scalable pipeline for processing large datasets and training machine learning models in production environments.\n\n### Architecture Overview\n- **Data Ingestion**: Apache Kafka for streaming data\n- **Processing**: Apache Spark with PySpark for distributed computing\n- **ML Framework**: TensorFlow and Scikit-learn\n- **Orchestration**: Apache Airflow for workflow management\n- **Monitoring**: MLflow for experiment tracking\n- **Deployment**: Kubernetes with Docker containers\n\n### Key Components\n\n#### Data Processing\n- Real-time data ingestion from multiple sources\n- Data validation and quality checks\n- Feature engineering and transformation pipelines\n- Automated data cleaning and preprocessing\n\n#### Model Training\n- Automated hyperparameter tuning with Optuna\n- Distributed training across multiple GPUs\n- A/B testing framework for model comparison\n- Automated model validation and testing\n\n#### Deployment & Monitoring\n- Continuous integration for model updates\n- Real-time model performance monitoring\n- Automated rollback capabilities\n- Comprehensive logging and alerting\n\n### Results\n- Reduced model training time by 70% through parallelization\n- Achieved 94% accuracy on production datasets\n- Processed over 1TB of data daily with 99.5% reliability",
+    "tech": ["Python", "TensorFlow", "Apache Spark", "Kafka", "Kubernetes", "MLflow"],
+    "image": "/images/ml-pipeline-project.jpg",
+    "githubUrl": "https://github.com/carlpaolino/ml-pipeline"
+  }
+] 

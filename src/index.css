@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-navy text-lightest-slate font-sans;
+    line-height: 1.3;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  ::selection {
+    @apply bg-green bg-opacity-20 text-green;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-navy;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-lightest-navy rounded-lg;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 sm:px-12 lg:px-24;
+  }
+  
+  .section-margin {
+    @apply py-20 lg:py-32;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center px-8 py-4 text-green border border-green rounded-md
+           hover:bg-green hover:bg-opacity-10 transition-all duration-200
+           font-medium tracking-wide;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-6 py-3 text-lightest-slate border border-slate rounded-md
+           hover:bg-slate hover:bg-opacity-10 transition-all duration-200
+           font-medium;
+  }
+  
+  .heading-gradient {
+    @apply bg-gradient-to-r from-lightest-slate to-green bg-clip-text text-transparent;
+  }
+  
+  .project-card {
+    @apply bg-light-navy rounded-lg p-6 hover:transform hover:scale-105 
+           transition-all duration-300 border border-lightest-navy
+           hover:border-green hover:shadow-lg hover:shadow-green/10;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+} 

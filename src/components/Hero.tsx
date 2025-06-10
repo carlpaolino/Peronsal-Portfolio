@@ -89,10 +89,24 @@ const Hero = () => {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-green/20 to-lightest-navy/20 flex items-center justify-center">
-                <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-light-navy border-2 border-green/30 flex items-center justify-center">
-                  <div className="text-6xl lg:text-8xl font-heading font-bold text-green">
-                    {profileData.name.split(' ').map(n => n[0]).join('')}
+              <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-green/20 to-lightest-navy/20 p-4">
+                <div className="w-full h-full rounded-full bg-light-navy border-2 border-green/30 overflow-hidden">
+                  <img
+                    src={profileData.profileImage}
+                    alt={`${profileData.name} - Profile Picture`}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback to initials if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-light-navy border-2 border-green/30 rounded-full flex items-center justify-center" style={{ display: 'none' }}>
+                    <div className="text-6xl lg:text-8xl font-heading font-bold text-green">
+                      {profileData.name.split(' ').map(n => n[0]).join('')}
+                    </div>
                   </div>
                 </div>
               </div>

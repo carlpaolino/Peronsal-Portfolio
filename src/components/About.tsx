@@ -82,8 +82,20 @@ const About = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-lg overflow-hidden bg-light-navy border border-green/20">
-                <div className="w-full h-full bg-gradient-to-br from-green/10 to-navy/50 flex items-center justify-center">
+              <div className="w-full max-w-lg h-80 lg:h-96 rounded-lg overflow-hidden bg-light-navy border border-green/20">
+                <img
+                  src={profileData.aboutImage}
+                  alt={`${profileData.name} - About Me`}
+                  className="w-full h-full object-contain"
+                  onError={(e) => {
+                    // Fallback display if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                <div className="w-full h-full bg-gradient-to-br from-green/10 to-navy/50 flex items-center justify-center" style={{ display: 'none' }}>
                   <div className="text-center">
                     <div className="text-6xl font-heading font-bold text-green mb-4">
                       {profileData.name.split(' ').map(n => n[0]).join('')}
@@ -91,6 +103,12 @@ const About = () => {
                     <p className="text-slate text-lg">{profileData.status}</p>
                     <p className="text-green text-sm mt-2">{profileData.location}</p>
                   </div>
+                </div>
+                
+                {/* Overlay with status info */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy/90 to-transparent p-6">
+                  <p className="text-lightest-slate text-lg font-medium">{profileData.status}</p>
+                  <p className="text-green text-sm">{profileData.location}</p>
                 </div>
               </div>
               <motion.div

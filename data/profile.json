@@ -1,7 +1,7 @@
 {
   "name": "Carl Paolino",
   "tagline": "Software Developer",
-  "bio": "Hi! I'm a passionate software engineer with experience in full-stack development, machine learning, and modern web technologies. I love delivering innovative solutions and exploring new technologies that make a real impact.",
+  "bio": "Hi! I'm a passionate computer science student at Georgia Tech with experience in full-stack development, machine learning, and modern web technologies. I love delivering innovative solutions and exploring new technologies that make a real impact.",
   "interests": [
     "Full Stack Development",
     "Machine Learning & AI",
@@ -16,6 +16,7 @@
     "Opportunities to mentor and learn from experienced engineers"
   ],
   "profileImage": "/images/profile.jpg",
+  "aboutImage": "/images/about.jpeg",
   "location": "Available for Remote Work",
   "status": "Open to Opportunities"
 } 

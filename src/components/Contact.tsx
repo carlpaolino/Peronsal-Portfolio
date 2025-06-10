@@ -1,50 +1,13 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaDownload } from 'react-icons/fa'
-// import emailjs from '@emailjs/browser'
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa'
 import linksData from '../../data/links.json'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
-  
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
   })
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitStatus('idle')
-
-    try {
-      // Note: You'll need to configure EmailJS with your service ID, template ID, and public key
-      // For now, we'll simulate the email sending
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', message: '' })
-    } catch (error) {
-      setSubmitStatus('error')
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
 
   return (
     <section id="contact" className="section-margin section-padding">
@@ -66,151 +29,74 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-center"
           >
-            <h3 className="text-2xl font-heading font-semibold text-lightest-slate mb-6">
-              Send me a message
+            <h3 className="text-3xl font-heading font-semibold text-lightest-slate mb-12">
+              Let's Connect
             </h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-lightest-slate font-medium mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 bg-light-navy border border-lightest-navy rounded-md 
-                           text-lightest-slate placeholder-slate focus:outline-none focus:border-green 
-                           transition-colors duration-200"
-                  placeholder="Your Name"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-lightest-slate font-medium mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 bg-light-navy border border-lightest-navy rounded-md 
-                           text-lightest-slate placeholder-slate focus:outline-none focus:border-green 
-                           transition-colors duration-200"
-                  placeholder="your@email.com"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-lightest-slate font-medium mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 bg-light-navy border border-lightest-navy rounded-md 
-                           text-lightest-slate placeholder-slate focus:outline-none focus:border-green 
-                           transition-colors duration-200 resize-none"
-                  placeholder="Tell me about your project or just say hello!"
-                />
-              </div>
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
-              
-              {submitStatus === 'success' && (
-                <p className="text-green text-center">Message sent successfully! I'll get back to you soon.</p>
-              )}
-              
-              {submitStatus === 'error' && (
-                <p className="text-red-400 text-center">Failed to send message. Please try again or contact me directly.</p>
-              )}
-            </form>
-          </motion.div>
-
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <h3 className="text-2xl font-heading font-semibold text-lightest-slate mb-6">
-              Let's connect
-            </h3>
-            
-            <div className="space-y-6 mb-8">
-              <a
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <motion.a
                 href={`mailto:${linksData.email}`}
-                className="flex items-center space-x-4 text-slate hover:text-green transition-colors duration-200 group"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="flex flex-col items-center p-8 bg-light-navy rounded-lg border border-lightest-navy hover:border-green transition-all duration-200 group"
               >
-                <div className="w-12 h-12 bg-light-navy border border-lightest-navy rounded-lg flex items-center justify-center group-hover:border-green transition-colors duration-200">
-                  <FaEnvelope size={20} />
+                <div className="w-16 h-16 bg-green/10 border border-green/20 rounded-full flex items-center justify-center group-hover:bg-green/20 transition-colors duration-200 mb-4">
+                  <FaEnvelope size={24} className="text-green" />
                 </div>
-                <div>
-                  <p className="font-medium">Email</p>
-                  <p className="text-sm">{linksData.email}</p>
-                </div>
-              </a>
+                <h4 className="text-xl font-heading font-semibold text-lightest-slate mb-2">Email</h4>
+                <p className="text-slate text-center">{linksData.email}</p>
+              </motion.a>
               
-              <a
+              <motion.a
                 href={`tel:${linksData.phone}`}
-                className="flex items-center space-x-4 text-slate hover:text-green transition-colors duration-200 group"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="flex flex-col items-center p-8 bg-light-navy rounded-lg border border-lightest-navy hover:border-green transition-all duration-200 group"
               >
-                <div className="w-12 h-12 bg-light-navy border border-lightest-navy rounded-lg flex items-center justify-center group-hover:border-green transition-colors duration-200">
-                  <FaPhone size={20} />
+                <div className="w-16 h-16 bg-green/10 border border-green/20 rounded-full flex items-center justify-center group-hover:bg-green/20 transition-colors duration-200 mb-4">
+                  <FaPhone size={24} className="text-green" />
                 </div>
-                <div>
-                  <p className="font-medium">Phone</p>
-                  <p className="text-sm">{linksData.phone}</p>
-                </div>
-              </a>
+                <h4 className="text-xl font-heading font-semibold text-lightest-slate mb-2">Phone</h4>
+                <p className="text-slate text-center">{linksData.phone}</p>
+              </motion.a>
             </div>
 
-            <div className="mb-8">
-              <h4 className="text-lg font-heading font-semibold text-lightest-slate mb-4">
-                Social Links
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="text-center"
+            >
+              <h4 className="text-xl font-heading font-semibold text-lightest-slate mb-6">
+                Follow Me
               </h4>
-              <div className="flex space-x-4">
+              <div className="flex justify-center space-x-6">
                 <a
                   href={linksData.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-light-navy border border-lightest-navy rounded-lg flex items-center justify-center text-slate hover:text-green hover:border-green transition-all duration-200"
+                  className="w-16 h-16 bg-light-navy border border-lightest-navy rounded-lg flex items-center justify-center text-slate hover:text-green hover:border-green hover:bg-green/10 transition-all duration-200"
                 >
-                  <FaLinkedin size={20} />
+                  <FaLinkedin size={24} />
                 </a>
                 <a
                   href={linksData.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-light-navy border border-lightest-navy rounded-lg flex items-center justify-center text-slate hover:text-green hover:border-green transition-all duration-200"
+                  className="w-16 h-16 bg-light-navy border border-lightest-navy rounded-lg flex items-center justify-center text-slate hover:text-green hover:border-green hover:bg-green/10 transition-all duration-200"
                 >
-                  <FaGithub size={20} />
+                  <FaGithub size={24} />
                 </a>
               </div>
-            </div>
+            </motion.div>
 
 
           </motion.div>

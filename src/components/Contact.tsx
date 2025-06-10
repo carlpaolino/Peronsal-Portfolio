@@ -212,17 +212,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div id="resume">
-              <a
-                href={linksData.resumeURL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center space-x-2"
-              >
-                <FaDownload />
-                <span>Download Resume</span>
-              </a>
-            </div>
+
           </motion.div>
         </div>
       </div>

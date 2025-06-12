@@ -10,7 +10,7 @@ const Resume = () => {
   })
 
   return (
-    <section id="resume" className="section-margin section-padding">
+    <section id="resume" className="section-padding pt-24 pb-20 lg:pb-32">
       <div className="max-w-7xl mx-auto">
         <motion.div
           ref={ref}

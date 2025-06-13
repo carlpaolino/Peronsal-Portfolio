@@ -61,13 +61,19 @@ const Portfolio = () => {
               className="project-card cursor-pointer"
               onClick={() => setSelectedProject(project)}
             >
-              <div className="aspect-video bg-lightest-navy rounded-md mb-4 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-green/20 to-navy/80 flex items-center justify-center">
+              <div className="aspect-video bg-lightest-navy rounded-md mb-4 overflow-hidden relative">
+                <img
+                  src={project.image}
+                  alt={`${project.title} screenshot`}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/images/placeholder-project.jpg';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-navy/80 to-navy/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-2xl font-heading font-bold text-green mb-2">
-                      {project.title.split(' ').map(word => word[0]).join('')}
-                    </div>
-                    <p className="text-slate text-sm">Click to view details</p>
+                    <p className="text-lightest-slate text-sm font-medium">Click to view details</p>
                   </div>
                 </div>
               </div>
@@ -153,6 +159,18 @@ const Portfolio = () => {
               </button>
               
               <div className="mb-6">
+                <div className="aspect-video bg-lightest-navy rounded-md mb-6 overflow-hidden">
+                  <img
+                    src={selectedProject.image}
+                    alt={`${selectedProject.title} screenshot`}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = '/images/placeholder-project.jpg';
+                    }}
+                  />
+                </div>
+
                 <h2 className="text-3xl font-heading font-bold text-lightest-slate mb-4">
                   {selectedProject.title}
                 </h2>

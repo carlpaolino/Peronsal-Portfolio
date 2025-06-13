@@ -1,6 +1,6 @@
 # Carl Paolino - Personal Portfolio
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio closely mimics the design of [trentconley.com](https://www.trentconley.com/) while showcasing Carl Paolino's unique professional profile.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
 ## 🚀 Features
 

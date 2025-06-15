@@ -30,12 +30,13 @@
     "githubUrl": "https://github.com/noahzanecook/haymakers"
   },
   {
-    "id": "machine-learning-pipeline",
-    "title": "ML Data Processing Pipeline",
-    "blurb": "Built a scalable machine learning pipeline for processing large datasets with automated model training and deployment capabilities.",
-    "descriptionMD": "## Machine Learning Data Processing Pipeline\n\nA robust, scalable pipeline for processing large datasets and training machine learning models in production environments.\n\n### Architecture Overview\n- **Data Ingestion**: Apache Kafka for streaming data\n- **Processing**: Apache Spark with PySpark for distributed computing\n- **ML Framework**: TensorFlow and Scikit-learn\n- **Orchestration**: Apache Airflow for workflow management\n- **Monitoring**: MLflow for experiment tracking\n- **Deployment**: Kubernetes with Docker containers\n\n### Key Components\n\n#### Data Processing\n- Real-time data ingestion from multiple sources\n- Data validation and quality checks\n- Feature engineering and transformation pipelines\n- Automated data cleaning and preprocessing\n\n#### Model Training\n- Automated hyperparameter tuning with Optuna\n- Distributed training across multiple GPUs\n- A/B testing framework for model comparison\n- Automated model validation and testing\n\n#### Deployment & Monitoring\n- Continuous integration for model updates\n- Real-time model performance monitoring\n- Automated rollback capabilities\n- Comprehensive logging and alerting\n\n### Results\n- Reduced model training time by 70% through parallelization\n- Achieved 94% accuracy on production datasets\n- Processed over 1TB of data daily with 99.5% reliability",
-    "tech": ["Python", "TensorFlow", "Apache Spark", "Kafka", "Kubernetes", "MLflow"],
-    "image": "/images/ml-pipeline-project.jpg",
-    "githubUrl": "https://github.com/carlpaolino/ml-pipeline"
+    "id": "fitness-app",
+    "title": "FitJacket",
+    "blurb": "Developed a fully functional fitness app using Django and a combination of APIs to track progress and provide personalized recommendations.",
+    "descriptionMD": "## FitJacket\n\nPersonaled Fitness app for the elderly and disabled\n\n### Architecture\n- **Frontend**: Python with HTML, CSS, and JavaScript\n- **API Integration**: OpenAI for fitness recommendations, Strava for activity tracking\n- **Database**: SQLite\n\n### Key Features\n- AI Suggested Activities\n- Friendly features: Light Contrast Mode, Large Text\n- Strava integration\n- Modern, responsive UI,",
+    "tech": ["Python", "Django", "OpenAI", "Strava", "SQLite"],
+    "image": "/images/fitjacketimage.png",
+    "liveUrl": "https://fitjacket.onrender.com/",
+    "githubUrl": "https://github.com/acezth/CS2340_FitJacket"
   }
 ] 

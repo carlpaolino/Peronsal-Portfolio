@@ -141,43 +141,11 @@ fontFamily: {
 }
 ```
 
-## 📧 EmailJS Setup
-
-To enable the contact form:
-
-1. Sign up at [EmailJS](https://www.emailjs.com/)
-2. Create a service and template
-3. Add your configuration to `src/components/Contact.tsx`:
-   ```typescript
-   await emailjs.sendForm(
-     'YOUR_SERVICE_ID',
-     'YOUR_TEMPLATE_ID',
-     form,
-     'YOUR_PUBLIC_KEY'
-   )
-   ```
-
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### Netlify
 
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy automatically with each push
-
-### Custom Domain
-
-1. Add your domain in Vercel dashboard
-2. Update DNS settings as instructed
-3. SSL certificates are handled automatically
-
-### Other Platforms
-
-The built files in `dist/` can be deployed to:
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
-- Any static hosting service
+Link: carlpaolino.com
 
 ## 🔧 Scripts
 
@@ -217,14 +185,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Contributing
 
 Feel free to fork this project and customize it for your own use. If you find bugs or have suggestions, please open an issue!
-
-## 📞 Support
-
-If you need help setting up or customizing this portfolio:
-- Open an issue on GitHub
-- Check the documentation
-- Review the code comments
-
----
 
 **Happy coding!** 🎉

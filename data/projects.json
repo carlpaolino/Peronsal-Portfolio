@@ -1,13 +1,13 @@
 [
   {
-    "id": "ecommerce-platform",
-    "title": "Shyply",
-    "blurb": "Built a full-stack e-commerce platform using Node.js, TypeScript, and NextAuth.js with real-time inventory management and payment processing.",
-    "descriptionMD": "## E-Commerce Platform\n\nA comprehensive e-commerce solution built from the ground up with modern web technologies. Features include:\n\n- **Frontend**: TypeScript\n- **Backend**: Node.js with Express, RESTful API design\n- **Database**: MongoDB with Mongoose ODM\n- **Payment**: Stripe integration for secure transactions\n- **Authentication**: JWT-based auth with refresh tokens\n- **Real-time**: WebSocket integration for live inventory updates\n\n### Key Features\n- User authentication and authorization\n- Product catalog with search and filtering\n- Shopping cart and wishlist functionality\n- Order management and tracking\n- Admin dashboard for inventory management\n- Responsive design for all devices",
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "NextAuth.js", "Stripe", "Cloudinary"],
-    "image": "/images/ecommerce-project.jpg",
-    "liveUrl": "https://ecommerce-demo.com",
-    "githubUrl": "https://github.com/carlpaolino/Shyply"
+    "id": "tech stack guide",
+    "title": "StackMentor.io",
+    "blurb": "Built a cross-platform desktop application with Electron and React to guide developers in selecting, configuring, and scaffolding full-stack projects with AI-powered step-by-step assistance.",
+    "descriptionMD": "## StackMentor.io\n\nA guided tech stack helper app that assists developers in building modern full-stack applications.\n\n### Architecture\n- **Frontend**: React + TypeScript + Tailwind CSS\n- **Desktop Framework**: Electron for cross-platform support\n- **AI Integration**: OpenAI GPT-4 for personalized guidance\n- **State Management**: Zustand\n- **Database**: Local SQLite for storing progress and preferences\n\n### Key Features\n- Interactive stack selection wizard\n- AI-powered configuration steps\n- Automatic project scaffolding\n- Global hotkey support for instant access\n- Cross-platform compatibility (Windows, macOS, Linux)",
+    "tech": ["React", "TypeScript", "Tailwind CSS", "Electron", "OpenAI", "Zustand", "SQLite"],
+    "image": "/images/stackMentor.png",
+    "liveUrl": "https://stackmentor.io",
+    "githubUrl": "https://github.com/carlpaolino/StackMentor.io"
   },
   {
     "id": "activity-planner",
@@ -30,6 +30,16 @@
     "githubUrl": "https://github.com/noahzanecook/haymakers"
   },
   {
+    "id": "ecommerce-platform",
+    "title": "Shyply",
+    "blurb": "Built a full-stack e-commerce platform using Node.js, TypeScript, and NextAuth.js with real-time inventory management and payment processing.",
+    "descriptionMD": "## E-Commerce Platform\n\nA comprehensive e-commerce solution built from the ground up with modern web technologies. Features include:\n\n- **Frontend**: TypeScript\n- **Backend**: Node.js with Express, RESTful API design\n- **Database**: MongoDB with Mongoose ODM\n- **Payment**: Stripe integration for secure transactions\n- **Authentication**: JWT-based auth with refresh tokens\n- **Real-time**: WebSocket integration for live inventory updates\n\n### Key Features\n- User authentication and authorization\n- Product catalog with search and filtering\n- Shopping cart and wishlist functionality\n- Order management and tracking\n- Admin dashboard for inventory management\n- Responsive design for all devices",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "NextAuth.js", "Stripe", "Cloudinary"],
+    "image": "/images/ecommerce-project.jpg",
+    "liveUrl": "https://ecommerce-demo.com",
+    "githubUrl": "https://github.com/carlpaolino/Shyply"
+  },
+  {
     "id": "fitness-app",
     "title": "FitJacket",
     "blurb": "Developed a fully functional fitness app using Django and a combination of APIs to track progress and provide personalized recommendations.",
@@ -39,4 +49,5 @@
     "liveUrl": "https://fitjacket.onrender.com/",
     "githubUrl": "https://github.com/acezth/CS2340_FitJacket"
   }
+  
 ] 

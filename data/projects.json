@@ -48,6 +48,25 @@
     "image": "/images/fitjacketimage.png",
     "liveUrl": "https://fitjacket.onrender.com/",
     "githubUrl": "https://github.com/acezth/CS2340_FitJacket"
+  },
+  {
+    "id": "mock interview platform",
+    "title": "InterviewBot",
+    "blurb": "Building a scalable mock interview platform with AI-driven question analysis and a rich UI for CS students to practice coding patterns and prepare for technical interviews.",
+    "descriptionMD": "## InterviewBot\n\nA mock interview platform helping CS majors practice LeetCode-style questions with a focus on patterns and structured interview prep.\n\n### Architecture\n- **Frontend**: React/Next.js + Tailwind CSS for an interactive chat-based UI\n- **Backend**: Node.js (Express/Fastify) or Python (FastAPI) for REST/GraphQL APIs, session management, and integration with LLMs\n- **Scraper**: Python-based microservice scraping fresh interview questions from LeetCode, GeeksforGeeks, and more\n- **Database**: PostgreSQL for structured data, with optional vector DB (Pinecone/Weaviate) for semantic search\n\n### Key Features\n- AI-powered interview agent that asks, analyzes, and scores coding answers\n- Pattern-based question selection to target user weaknesses\n- Interactive UI with timers, hints, and real-time feedback\n- Persistent history of interview sessions\n- Scraper service that keeps the question bank updated automatically\n- Dockerized microservices architecture for easy deployment",
+    "tech": [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "FastAPI",
+      "Python",
+      "Scrapy",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "image": "/images/interviewBot.png",
+    "liveUrl": "",
+    "githubUrl": "https://github.com/carlpaolino/Interview-Bot"
   }
-  
 ] 

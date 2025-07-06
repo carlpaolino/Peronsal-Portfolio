@@ -65,7 +65,7 @@ const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={`${project.title} screenshot`}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-contain bg-lightest-navy transition-transform duration-300 hover:scale-105"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = '/images/placeholder-project.jpg';
@@ -163,7 +163,7 @@ const Portfolio = () => {
                   <img
                     src={selectedProject.image}
                     alt={`${selectedProject.title} screenshot`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-lightest-navy"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = '/images/placeholder-project.jpg';

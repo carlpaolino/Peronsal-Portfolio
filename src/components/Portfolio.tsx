@@ -28,7 +28,7 @@ const Portfolio = () => {
       .replace(/### (.*)/g, '<h3 class="text-xl font-heading font-semibold text-green mb-3 mt-6">$1</h3>')
       .replace(/## (.*)/g, '<h2 class="text-2xl font-heading font-bold text-lightest-slate mb-4 mt-8">$1</h2>')
       .replace(/\*\*(.*?)\*\*/g, '<strong class="text-lightest-slate font-semibold">$1</strong>')
-      .replace(/- (.*)/g, '<li class="ml-4 mb-2 text-slate">• $1</li>')
+      .replace(/- (.*)/g, '<li class="ml-4 mb-2 text-slate">$1</li>')
       .replace(/\n/g, '<br />')
   }
 

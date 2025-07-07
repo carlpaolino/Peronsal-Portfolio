@@ -20,26 +20,6 @@
     "githubUrl": "https://github.com/carlpaolino/Quick-Map"
   },
   {
-    "id": "3d_web_game",
-    "title": "3D Web Broswer Game",
-    "blurb": "Created a mimic of Gang Beasts using Three.js and React.",
-    "descriptionMD": "## 3D Web Broswer Game\n\nA 3d web broswer game built from scratch by myself and a team from Georgia Tech.\n\n### Technical Stack\n- **Frontend**: Three.js, HTML, CSS\n- **Backend**: NestJS with TypeORM\n- **Real-time**: Socket.io for live collaboration\n\n### Core Features\n- **Project Management**: Create and organize projects with custom workflows\n- **Team Collaboration**: Real-time updates and notifications\n- **Task Tracking**: Kanban boards, Gantt charts, and calendar views",
-    "tech": ["Three.js", "NestJS", "PostgreSQL", "HTML", "Socket.io"],
-    "image": "/images/webdevimage.png",
-    "liveUrl": "https://taskmanager-demo.com",
-    "githubUrl": "https://github.com/noahzanecook/haymakers"
-  },
-  {
-    "id": "ecommerce-platform",
-    "title": "Shyply",
-    "blurb": "Built a full-stack e-commerce platform using Node.js, TypeScript, and NextAuth.js with real-time inventory management and payment processing.",
-    "descriptionMD": "## E-Commerce Platform\n\nA comprehensive e-commerce solution built from the ground up with modern web technologies. Features include:\n\n- **Frontend**: TypeScript\n- **Backend**: Node.js with Express, RESTful API design\n- **Database**: MongoDB with Mongoose ODM\n- **Payment**: Stripe integration for secure transactions\n- **Authentication**: JWT-based auth with refresh tokens\n- **Real-time**: WebSocket integration for live inventory updates\n\n### Key Features\n- User authentication and authorization\n- Product catalog with search and filtering\n- Shopping cart and wishlist functionality\n- Order management and tracking\n- Admin dashboard for inventory management\n- Responsive design for all devices",
-    "tech": ["Next.js", "TypeScript", "Tailwind CSS", "NextAuth.js", "Stripe", "Cloudinary"],
-    "image": "/images/ecommerce-project.jpg",
-    "liveUrl": "https://ecommerce-demo.com",
-    "githubUrl": "https://github.com/carlpaolino/Shyply"
-  },
-  {
     "id": "fitness-app",
     "title": "FitJacket",
     "blurb": "Developed a fully functional fitness app using Django and a combination of APIs to track progress and provide personalized recommendations.",
@@ -48,6 +28,26 @@
     "image": "/images/fitjacketimage.png",
     "liveUrl": "https://fitjacket.onrender.com/",
     "githubUrl": "https://github.com/acezth/CS2340_FitJacket"
+  },
+  {
+    "id": "medical ai assistant",
+    "title": "MedGPT",
+    "blurb": "Building a conversational medical assistant that delivers instant, safe, and reliable medical guidance using AI technology, with built-in safety features and structured citations.",
+    "descriptionMD": "## MedGPT\n\nA web-based conversational assistant providing medical information with safety-focused features and structured citations.\n\n### Architecture\n- **Frontend**: React 18, TypeScript, Tailwind CSS for a modern, responsive chat interface\n- **Backend**: Node.js with Express for secure API endpoints and business logic\n- **AI**: OpenAI GPT-4 API (configurable for other LLMs) for generating medical guidance\n- **Database**: SQLite in development and PostgreSQL in production for session storage and logs\n\n### Key Features\n- ChatGPT-style conversational UI with light/dark mode\n- Structured citations linking responses to medical literature\n- Safety guardrails including disclaimers and content filtering\n- Triage recommendations to suggest appropriate care levels\n- Exportable chat transcripts for patient-doctor communication\n- Responsive design for seamless desktop and mobile experience",
+    "tech": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "OpenAI",
+      "SQLite",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "image": "/images/medicalGPT.png",
+    "liveUrl": "https://medicalgpt.netlify.app",
+    "githubUrl": "https://github.com/carlpaolino/MedicalGPT"
   },
   {
     "id": "mock interview platform",

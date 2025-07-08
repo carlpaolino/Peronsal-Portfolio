@@ -2,7 +2,7 @@
   {
     "id": "tech stack guide",
     "title": "StackMentor.io",
-    "blurb": "Built a cross-platform desktop application with Electron and React to guide developers in selecting, configuring, and scaffolding full-stack projects with AI-powered step-by-step assistance.",
+    "blurb": "Building a cross-platform desktop application with Electron and React to guide developers in selecting, configuring, and scaffolding full-stack projects with AI-powered step-by-step assistance.",
     "descriptionMD": "## StackMentor.io\n\nA guided tech stack helper app that assists developers in building modern full-stack applications.\n\n### Architecture\n- **Frontend**: React + TypeScript + Tailwind CSS\n- **Desktop Framework**: Electron for cross-platform support\n- **AI Integration**: OpenAI GPT-4 for personalized guidance\n- **State Management**: Zustand\n- **Database**: Local SQLite for storing progress and preferences\n\n### Key Features\n- Interactive stack selection wizard\n- AI-powered configuration steps\n- Automatic project scaffolding\n- Global hotkey support for instant access\n- Cross-platform compatibility (Windows, macOS, Linux)",
     "tech": ["React", "TypeScript", "Tailwind CSS", "Electron", "OpenAI", "Zustand", "SQLite"],
     "image": "/images/stackMentor.png",
@@ -13,10 +13,10 @@
     "id": "activity-planner",
     "title": "QuickMap",
     "blurb": "Developed an intelligent activity planner using Google Maps Places API and SeatGeek API, featuring suggested activities and events based on user location and preferences.",
-    "descriptionMD": "## Activity Planner\n\nAn intelligent activity planner using Google Maps Places API and SeatGeek API, featuring suggested activities and events based on user location and preferences.\n\n### Architecture\n- **Frontend**: React with TypeScript and Material-UI\n- **Backend**: Node.js with Express\n- **AI Integration**: OpenAI GPT-4 API with custom fine-tuning\n- **Database**: MongoDB\n- **Vector Search**: Pinecone for semantic document retrieval\n\n### Key Features\n- Real-time location-based activity directory\n- Activity Categorization(fun, hikes, food, etc.)\n- Detailed activity planning\n- Modern, responsive UI\n- Future IOS app integration ready",
-    "tech": ["Next.js", "Python", "FastAPI", "OpenAI", "PostgreSQL", "Pinecone"],
+    "descriptionMD": "## Activity Planner\n\nAn intelligent activity planner using Google Maps Places API and SeatGeek API, featuring suggested activities and events based on user location and preferences.\n\n### Architecture\n- **Frontend**: React with TypeScript and Material-UI\n- **Backend**: Node.js with Express\n- **AI Integration**: OpenAI GPT-4 API with custom fine-tuning\n- **Database**: MongoDB\n\n### Key Features\n- Real-time location-based activity directory\n- Activity Categorization(fun, hikes, food, etc.)\n- Detailed activity planning\n- Modern, responsive UI\n- Future IOS app integration ready",
+    "tech": ["Next.js", "Python", "FastAPI", "OpenAI", "PostgreSQL"],
     "image": "/images/QuickMapImage.png",
-    "liveUrl": "https://ai-assistant-demo.com",
+    "liveUrl": "",
     "githubUrl": "https://github.com/carlpaolino/Quick-Map"
   },
   {

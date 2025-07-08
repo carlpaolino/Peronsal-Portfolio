@@ -47,7 +47,7 @@ const Portfolio = () => {
           </h2>
           <div className="w-16 h-1 bg-green mx-auto mb-6"></div>
           <p className="text-slate text-lg max-w-2xl mx-auto">
-            Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience.
+            Here are some of the projects I am working on or have completed.
           </p>
         </motion.div>
 

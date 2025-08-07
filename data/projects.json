@@ -1,13 +1,22 @@
 [
   {
-    "id": "tech stack guide",
-    "title": "StackMentor.io",
-    "blurb": "Building a cross-platform desktop application with Electron and React to guide developers in selecting, configuring, and scaffolding full-stack projects with AI-powered step-by-step assistance.",
-    "descriptionMD": "## StackMentor.io\n\nA guided tech stack helper app that assists developers in building modern full-stack applications.\n\n### Architecture\n- **Frontend**: React + TypeScript + Tailwind CSS\n- **Desktop Framework**: Electron for cross-platform support\n- **AI Integration**: OpenAI GPT-4 for personalized guidance\n- **State Management**: Zustand\n- **Database**: Local SQLite for storing progress and preferences\n\n### Key Features\n- Interactive stack selection wizard\n- AI-powered configuration steps\n- Automatic project scaffolding\n- Global hotkey support for instant access\n- Cross-platform compatibility (Windows, macOS, Linux)",
-    "tech": ["React", "TypeScript", "Tailwind CSS", "Electron", "OpenAI", "Zustand", "SQLite"],
-    "image": "/images/stackMentor.png",
-    "liveUrl": "https://stackmentor.io",
-    "githubUrl": "https://github.com/carlpaolino/StackMentor.io"
+    "id": "investing assistant",
+    "title": "InvestIQ",
+    "blurb": "Building a cross-platform AI investment assistant using Python and Electron to deliver personalized, real-time trading insights via screen analysis, market data, and custom-trained models.",
+    "descriptionMD": "## InvestIQ\n\nA real-time AI-powered trading assistant that overlays personalized investment tips on your screen, trained on your own strategies and trade history.\n\n### Architecture\n- **Frontend**: Electron.js for floating UI overlay\n- **Backend**: Python + FastAPI for AI predictions\n- **AI Models**: PyTorch for vision models, TensorFlow for time-series forecasting, Hugging Face Transformers for LLM-based commentary\n- **Market Data**: yfinance, Alpha Vantage, and Polygon APIs\n\n### Key Features\n- Real-time screen OCR and chart recognition\n- Personalized LLM insights fine-tuned on your trade history\n- Floating overlay UI with actionable trading suggestions\n- Continuous reinforcement learning from user decisions",
+    "tech": [
+    "Python",
+    "Electron.js",
+    "FastAPI",
+    "PyTorch",
+    "TensorFlow",
+    "Hugging Face Transformers",
+    "yfinance",
+    "Alpha Vantage"
+  ],
+    "image": "/images/investIQ.png",
+    "liveUrl": "https://not-yet-deployed.com",
+    "githubUrl": "https://github.com/carlpaolino/InvestIQ"
   },
   {
     "id": "activity-planner",

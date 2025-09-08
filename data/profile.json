@@ -1,17 +1,18 @@
 {
   "name": "Carl Paolino",
   "tagline": "Software Developer",
-  "bio": "Hi! I'm a passionate computer science student at Georgia Tech with experience in full-stack development, planning to graduate in Spring 2027. This summer, I will be working part time with Healthmap Solutions as a software development intern, and gaining experience through side projects",
+  "bio": "Hi! I'm a passionate computer science student at Georgia Tech with experience in full-stack development, planning to graduate in Spring 2027. I am currently taking doing research in drone communication and exploring machine learning/ai projects in my free time.",
   "interests": [
     "Full Stack Development",
     "Machine Learning & AI",
-    "Cloud Architecture",
-    "Open Source Contributions",
-    "System Design"
+    "System Design",
+    "Drones",
+    "Investing"
+
   ],
   "lookingFor": [
     "Internship opportunities in Spring or Summer 2026",
-    "Part-time contracting work in Web Development or Full Stack Development",
+    "Part-time contracting work in Full Stack Development or ml/ai projects",
     "Chats, advice, or connections from experienced engineers"
   ],
   "profileImage": "/images/profile.jpg",

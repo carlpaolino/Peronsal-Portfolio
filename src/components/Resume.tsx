@@ -24,8 +24,7 @@ const Resume = () => {
           </h2>
           <div className="w-16 h-1 bg-green mx-auto mb-6"></div>
           <p className="text-slate text-lg max-w-2xl mx-auto mb-8">
-            Take a look at my experience and qualifications. 
-            Feel free to download a copy.
+            Take a look at my experience and qualifications.
           </p>
           
           <motion.div

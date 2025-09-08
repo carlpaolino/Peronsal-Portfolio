@@ -18,6 +18,29 @@
     "liveUrl": "https://not-yet-deployed.com",
     "githubUrl": "https://github.com/carlpaolino/InvestIQ"
   },
+
+  {
+    "id": "drone-comm-system",
+    "title": "Drone Communication System",
+    "blurb": "Working in undergraduate research to develop a communication framework enabling drones to transmit telemetry, sensor data, and live video feeds to client applications through a robust server and API architecture.",
+    "descriptionMD": "## Drone Communication System\n\nA system designed to enable seamless communication between drones and client applications, handling telemetry, sensor data, and live video streaming.\n\n### Architecture\n- **Drone & Ground Control**: Drone + Mission Planner for telemetry and command\n- **Server Layer**: RTMP server (video) and HTTP server (telemetry/data)\n- **API Gateway**: Reverse proxy to route requests between multiple servers\n- **Hardware Integration**: Raspberry Pi hosting server and Mission Planner onboard drone\n\n### Key Features\n- Stable, secure communication link between drone and server\n- Telemetry + sensor data streaming (location, battery, camera) via HTTP\n- Real-time video feed transmission via RTMP\n- External API and reverse proxy for routing client requests\n- Planned mobile and web app integration for monitoring and control",
+    "tech": ["Python", "Flask", "Nginx", "RTMP", "Raspberry Pi", "Postman"],
+    "image": "/images/DroneCommImage.png",
+    "liveUrl": "",
+    "githubUrl": "https://github.com/carlpaolino/Drone-Comm-System"
+  },
+
+  {
+    "id": "house-price-ml",
+    "title": "House Price Prediction",
+    "blurb": "Built an end-to-end regression pipeline in Python to predict Boston housing prices using XGBoost, with data preprocessing, EDA, model training, and evaluation.",
+    "descriptionMD": "## House Price Prediction\n\nAn end-to-end machine learning project predicting Boston house prices.\n\n### Architecture & Workflow\n- **Data**: Boston Housing dataset (13 features → price target)\n- **Preprocessing**: Pandas DataFrame construction, target merge, missing-value checks, summary stats\n- **EDA**: Correlation analysis and heatmap to identify key relationships\n- **Modeling**: Train/test split (80/20); XGBoost Regressor training\n- **Evaluation**: R² ≈ 0.973 (train), R² ≈ 0.99 (test), MAE ≈ 1.14 (k$)\n- **Visualization**: Scatter plot comparing actual vs. predicted prices\n\n### Key Features\n- Clean, well-documented Colab notebook with reproducible pipeline\n- EDA-driven feature insights to guide modeling\n- Clear metrics and plots",
+    "tech": ["Python", "NumPy", "pandas", "scikit-learn", "XGBoost", "Matplotlib", "Seaborn", "Google Colab"],
+    "image": "/images/HousePriceML.png",
+    "liveUrl": "",
+    "githubUrl": ""
+  },
+
   {
     "id": "activity-planner",
     "title": "QuickMap",

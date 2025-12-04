@@ -28,7 +28,7 @@ const Portfolio = () => {
   )
   
   const aiMlProjects = projectsData.filter(project => 
-    ['investing assistant', 'mock interview platform', 'house-price-ml'].includes(project.id)
+    ['ai-agent','investing assistant', 'mock interview platform', 'house-price-ml'].includes(project.id)
   )
 
   const parseMarkdown = (markdown: string) => {

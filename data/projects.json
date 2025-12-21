@@ -3,7 +3,7 @@
     "id": "ai-agent",
     "title": "AI Agent",
     "blurb": "Full-stack operations cockpit pairing React, FastAPI, ElectricSQL, and AWS Bedrock to audit fuel and ground activity in real time.",
-    "descriptionMD": "## Thrust Agent\n\nAn AI-augmented operations cockpit for Defense fueling and ground services, combining a Vite/React mission UI with FastAPI + AWS Bedrock orchestration to reconcile transactions, surface anomalies, and answer natural-language questions.\n\n### Architecture\n- **Frontend**: React + TypeScript + Vite served through Nginx, with ElectricSQL + IndexedDB to keep datasets cached client-side.\n- **Backend**: FastAPI + PostgreSQL handling JWT auth, Bedrock prompt builders, and REST endpoints for chats, conversations, and reports.\n- **Worker**: Bedrock-driven classifier that routes requests into Direct Database Inference, Context-Enhanced queries, user assistance, or Tool-Based Report Generation buckets.\n\n### Key Features\n- Multi-tenant mission view with Admin, Suppliers, Prices, Assets, Receipts, Activities, EBS charges, and assistant tabs tuned for role-based access.\n- ElectricSQL shape streams and IndexedDB caching keep receipts, refueling forms, login logs, and activities synchronized even offline.\n- AWS Bedrock bucketization auto-detects out-of-scope asks, spins up SQL queries, or kicks off automated report workflows with glossary-aware prompts.\n- Tool-based report generation returns presigned PDFs packed with reconciliation KPIs, spend breakdowns, and anomaly callouts.",
+    "descriptionMD": "## Thrust Agent\n\nAn AI-augmented operations cockpit for fueling and ground services, combining a Vite/React mission UI with FastAPI + AWS Bedrock orchestration to reconcile transactions, surface anomalies, and answer natural-language questions.\n\n### Architecture\n- **Frontend**: React + TypeScript + Vite served through Nginx, with ElectricSQL + IndexedDB to keep datasets cached client-side.\n- **Backend**: FastAPI + PostgreSQL handling JWT auth, Bedrock prompt builders, and REST endpoints for chats, conversations, and reports.\n- **Worker**: Bedrock-driven classifier that routes requests into Direct Database Inference, Context-Enhanced queries, user assistance, or Tool-Based Report Generation buckets.\n\n### Key Features\n- Multi-tenant mission view with Admin, Prices, Receipts, Activities, and assistant tabs tuned for role-based access.\n- ElectricSQL shape streams and IndexedDB caching keep receipts, refueling forms, login logs, and activities synchronized even offline.\n- AWS Bedrock bucketization auto-detects out-of-scope asks, spins up SQL queries, or kicks off automated report workflows with glossary-aware prompts.\n- Tool-based report generation returns PDFs, spend breakdowns, and anomaly callouts.",
     "tech": [
       "React",
       "TypeScript",
@@ -15,7 +15,7 @@
       "ElectricSQL",
       "Docker"
     ],
-    "image": "/images/ThrustLogoBlack.png",
+    "image": "/images/agent_image.webp",
     "liveUrl": "https://not-deployed-classified.com",
     "githubUrl": "classified"
   },
